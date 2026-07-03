@@ -53,7 +53,7 @@ Linked Lists → Trees (BFS/DFS) → Heaps → Backtracking → Graphs → 1-D D
 
 ## Session mechanics
 
-- 2 sessions/fortnight, ~2-3h each
+- 1 hour per sitting, not a marathon — short and frequent beats long and rare, and keeps this from eating into Rust time
 - Per problem: ~20-25 min genuine attempt, then check the editorial/video if stuck — no grinding past 30 min this early
 - Progress tracked via NeetCode's built-in checklist; this README's checklist is the phase-level view
 
