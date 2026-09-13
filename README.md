@@ -87,6 +87,6 @@ Each pattern folder holds one file per problem (`problem-name.js`), plus a short
 
 ```bash
 npm install
-node patterns/01-arrays-hashing/two-sum.js
+node patterns/<pattern-folder>/<problem-name>.js   # e.g. patterns/01-arrays-hashing/two-sum.js, once written
 npm test          # runs any *.test.js files with vitest
 ```

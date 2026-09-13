@@ -4,6 +4,8 @@ Starting point: comfortable with JS syntax historically, rusty from months off, 
 
 40 sessions below. Life happens — if a day slips, don't double up, just shift everything right. Finishing in 7-9 weeks at this pace is still on target.
 
+Weeks 1-5 build in a review day every 5th session, since that's when patterns are newest and retention needs the most reinforcement. Weeks 6-8 run new material back-to-back instead — by then the goal is breadth across the remaining patterns, and the Day 40+ buffer becomes continuous spaced review once every pattern has been introduced at least once.
+
 **Per-session shape (~60 min):**
 - 5 min: skim previous day's solution, re-run it from memory
 - 35-40 min: genuine attempt at today's problem(s), no notes/editorial
@@ -52,7 +54,7 @@ Check off both `PLAN.md` and the per-pattern `README.md` as you go.
 - [ ] **Day 22** — `07-trees`: Same Tree, Subtree of Another Tree
 - [ ] **Day 23** — `07-trees`: Binary Tree Level Order Traversal (BFS), Lowest Common Ancestor of a BST
 - [ ] **Day 24** — `07-trees`: Validate Binary Search Tree, Kth Smallest Element in a BST
-- [ ] **Day 25** — Review day: redo two tree problems (one DFS, one BFS), timed
+- [ ] **Day 25** — `07-trees`: Construct Binary Tree from Preorder and Inorder Traversal, then redo one earlier tree problem cold, timed, if time remains
 
 ## Week 6 — Heap + Backtracking
 
@@ -70,7 +72,7 @@ Check off both `PLAN.md` and the per-pattern `README.md` as you go.
 - [ ] **Day 34** — `10-graphs`: Course Schedule, Course Schedule II (topological sort)
 - [ ] **Day 35** — `10-graphs`: Number of Connected Components, Graph Valid Tree
 
-## Week 8 — 1-D DP + Mock Interviews
+## Week 8 — 1-D DP
 
 - [ ] **Day 36** — `11-1d-dp`: Climbing Stairs, House Robber
 - [ ] **Day 37** — `11-1d-dp`: House Robber II, Longest Palindromic Substring
@@ -93,6 +95,6 @@ Once Day 40 is done, switch from new patterns to interview simulation:
 
 ```bash
 npm install
-node patterns/01-arrays-hashing/two-sum.js
+node patterns/<pattern-folder>/<problem-name>.js   # e.g. patterns/01-arrays-hashing/two-sum.js, once written
 npm test          # runs any *.test.js files with vitest
 ```
