@@ -1,9 +1,6 @@
 # Warm-up
 
-JS/TS syntax refresh before pattern work starts — not algorithm practice yet.
+Plain JS syntax refresh before pattern work starts — not algorithm practice yet (see Days 1-2 in `../../PLAN.md`).
 
-Focus: destructuring, spread/rest, `map`/`filter`/`reduce`, `Set`/`Map`, arrow functions, basic TS generics.
-
-- [ ] Two Sum
-- [ ] Valid Anagram
-- [ ] Contains Duplicate
+- [ ] Destructuring, spread/rest, template literals, arrow functions
+- [ ] Array methods (`map`/`filter`/`reduce`/`sort`/`flat`), `Map`/`Set`, `Object.entries`/`keys`/`values`
