@@ -1,6 +1,6 @@
 # Arrays & Hashing
 
-- [ ] Two Sum
+- [x] Two Sum
 - [ ] Contains Duplicate
 - [ ] Valid Anagram
 - [ ] Group Anagrams
