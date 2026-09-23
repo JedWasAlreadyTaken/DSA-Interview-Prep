@@ -18,8 +18,8 @@ Check off both `PLAN.md` and the per-pattern `README.md` as you go.
 
 ## Week 1 — JS refresh + Arrays/Hashing
 
-- [ ] **Day 1** — `00-warmup`: destructuring, spread/rest, template literals, arrow functions. Write throwaway snippets exercising each, no LeetCode yet.
-- [ ] **Day 2** — `00-warmup`: array methods (`map`/`filter`/`reduce`/`sort`/`flat`), `Map`/`Set`, `Object.entries`/`keys`/`values`. Same drill style.
+- [x] **Day 1** — `00-warmup`: destructuring, spread/rest, template literals, arrow functions. Write throwaway snippets exercising each, no LeetCode yet.
+- [x] **Day 2** — `00-warmup`: array methods (`map`/`filter`/`reduce`/`sort`/`flat`), `Map`/`Set`, `Object.entries`/`keys`/`values`. Same drill style.
 - [ ] **Day 3** — `01-arrays-hashing`: Two Sum, Contains Duplicate
 - [ ] **Day 4** — `01-arrays-hashing`: Valid Anagram, Group Anagrams
 - [ ] **Day 5** — `01-arrays-hashing`: Top K Frequent Elements
