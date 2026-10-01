@@ -29,5 +29,7 @@ class Solution {
    * @param {number[]} nums
    * @return {boolean}
    */
-  containsDuplicate(nums) {}
+  containsDuplicate(nums) {
+    
+  }
 }
