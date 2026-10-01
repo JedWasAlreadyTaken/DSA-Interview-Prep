@@ -30,6 +30,14 @@ class Solution {
    * @return {boolean}
    */
   containsDuplicate(nums) {
-    
+    let seen = new Set();
+
+    for (const digit of nums) {
+      if (seen.has(digit)) {
+        return true;
+      }
+      seen.add(digit);
+    }
+    return false;
   }
 }
