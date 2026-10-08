@@ -31,7 +31,7 @@ class Solution {
    */
   isValid(s) {
     const stack = [];
-    const pairs = { ")": "( ", "]": "[", "}": "{" };
+    const pairs = { ")": "(", "]": "[", "}": "{" };
     /*
 
     */
