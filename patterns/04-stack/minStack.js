@@ -39,26 +39,43 @@ At most 30,000 calls will be made to push, pop, top, and getMin.
 */
 
 class MinStack {
-  constructor() {}
+  constructor() {
+    this.stack = [];
+    this.minStack = [];
+  }
 
   /**
    * @param {number} val
    * @return {void}
    */
-  push(val) {}
+  push(val) {
+    this.stack.push(val);
+    const currentMin =
+      this.minStack.length === 0
+        ? val
+        : Math.min(val, this.minStack[this.minStack.length - 1]);
+    this.minStack.push(currentMin);
+  }
 
   /**
    * @return {void}
    */
-  pop() {}
+  pop() {
+    this.stack.pop();
+    this.minStack.pop();
+  }
 
   /**
    * @return {number}
    */
-  top() {}
+  top() {
+    return this.stack[this.stack.length - 1];
+  }
 
   /**
    * @return {number}
    */
-  getMin() {}
+  getMin() {
+    return this.minStack[this.minStack.length - 1];
+  }
 }
