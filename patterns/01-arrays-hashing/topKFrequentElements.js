@@ -23,12 +23,34 @@ It is guaranteed the answer is unique.
 Follow-up: your algorithm's time complexity must be better than O(n log n)
 where n is the array's size.
 */
-
 class Solution {
   /**
    * @param {number[]} nums
    * @param {number} k
    * @return {number[]}
    */
-  topKFrequent(nums, k) {}
+  topKFrequent(nums, k) {
+    let count = new Map();
+    let bucket = [];
+    for (let i = 0; i <= nums.length; i++) {
+      bucket.push([]);
+    }
+    let result = [];
+
+    for (let i = 0; i < nums.length; i++) {
+      count.set(nums[i], (count.get(nums[i]) ?? 0) + 1);
+    }
+    for (const [n, c] of count) {
+      bucket[c].push(n);
+    }
+    for (let i = bucket.length - 1; i >= 0; i--) {
+      if (bucket[i]) result.push(...bucket[i]);
+      if (result.length === k) break;
+    }
+    return result;
+  }
 }
+
+const sol = new Solution();
+console.log(sol.topKFrequent([1, 1, 1, 2, 2, 3], 2)); // expected: [1, 2]
+console.log(sol.topKFrequent([1], 1)); // expected: [1]
