@@ -36,10 +36,10 @@ class Solution {
     let results = [];
     let seenkeys = new Set();
     // Outer loop: try every index i as the first number of the triplet.
-    for (let i = 0; i < nums.length; i++) {
+    for (let i = 0; i < nums.length - 2; i++) {
       // Middle loop starts at i + 1 so j never reuses index i and we
       // never re-check a combination we've already tried.
-      for (let j = i + 1; j < nums.length; j++) {
+      for (let j = i + 1; j < nums.length - 1; j++) {
         // Inner loop starts at j + 1 for the same reason, so i, j and k
         // are always three different indices. Three nested loops over
         // the array is what makes this brute force O(n^3).
@@ -47,7 +47,13 @@ class Solution {
           // A valid triplet sums to exactly 0. Duplicate triplets (same
           // values, different indices or order) must only be kept once.
           if (nums[i] + nums[j] + nums[k] === 0) {
-            results.push(nums.sort((a, b) => a - b).join(" "));
+            let triplet = [nums[i], nums[j], nums[k]].sort((a, b) => a - b);
+            const key = triplet.join(" ");
+
+            if (!seenkeys.has(key)) {
+              seenkeys.add(key);
+              results.push(triplet);
+            }
           }
         }
       }
