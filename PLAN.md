@@ -28,7 +28,7 @@ Check off both `PLAN.md` and the per-pattern `README.md` as you go.
 
 - [x] **Day 6** — `01-arrays-hashing`: Product of Array Except Self
 - [x] **Day 7** — `02-two-pointers`: Valid Palindrome
-- [ ] **Day 8** — `02-two-pointers`: 3Sum (part 1 — get brute force, then optimize)
+- [x] **Day 8** — `02-two-pointers`: 3Sum (part 1 — get brute force, then optimize)
 - [ ] **Day 9** — `02-two-pointers`: 3Sum (finish), Container With Most Water
 - [ ] **Day 10** — Review day: redo one problem from days 3-9 cold, no notes, timed 15 min
 

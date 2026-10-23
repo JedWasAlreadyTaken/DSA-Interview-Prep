@@ -60,9 +60,42 @@ class Solution {
     }
     return results;
   }
+
+  optimisedThreeSum(nums) {
+    nums.sort((a, b) => a - b);
+    let results = [];
+
+    for (let i = 0; i < nums.length - 2; i++) {
+      if (nums[i] === nums[i - 1]) {
+        continue;
+      }
+      let left = i + 1;
+      let right = nums.length - 1;
+
+      while (left < right) {
+        if (nums[left] + nums[right] < -nums[i]) {
+          left++;
+        } else if (nums[left] + nums[right] > -nums[i]) {
+          right--;
+        } else if (nums[left] + nums[right] === -nums[i]) {
+          results.push([nums[i], nums[left], nums[right]]);
+          left++;
+          right--;
+          while (nums[left] == nums[left - 1] && left < right) {
+            left++;
+          }
+        }
+      }
+    }
+    return results;
+  }
 }
 
 const sol = new Solution();
 console.log(sol.threeSum([-1, 0, 1, 2, -1, -4])); // expected: [[-1, -1, 2], [-1, 0, 1]]
 console.log(sol.threeSum([0, 1, 1])); // expected: []
 console.log(sol.threeSum([0, 0, 0])); // expected: [[0, 0, 0]]
+console.log("Optimised \n ");
+console.log(sol.optimisedThreeSum([-1, 0, 1, 2, -1, -4])); // expected: [[-1, -1, 2], [-1, 0, 1]]
+console.log(sol.optimisedThreeSum([0, 1, 1])); // expected: []
+console.log(sol.optimisedThreeSum([0, 0, 0])); // expected: [[0, 0, 0]]
