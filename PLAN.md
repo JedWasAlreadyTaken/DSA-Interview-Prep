@@ -22,11 +22,11 @@ Check off both `PLAN.md` and the per-pattern `README.md` as you go.
 - [x] **Day 2** — `00-warmup`: array methods (`map`/`filter`/`reduce`/`sort`/`flat`), `Map`/`Set`, `Object.entries`/`keys`/`values`. Same drill style.
 - [x] **Day 3** — `01-arrays-hashing`: Two Sum, Contains Duplicate
 - [x] **Day 4** — `01-arrays-hashing`: Valid Anagram, Group Anagrams
-- [ ] **Day 5** — `01-arrays-hashing`: Top K Frequent Elements
+- [x] **Day 5** — `01-arrays-hashing`: Top K Frequent Elements
 
 ## Week 2 — Finish Arrays/Hashing + Two Pointers
 
-- [ ] **Day 6** — `01-arrays-hashing`: Product of Array Except Self
+- [x] **Day 6** — `01-arrays-hashing`: Product of Array Except Self
 - [x] **Day 7** — `02-two-pointers`: Valid Palindrome
 - [ ] **Day 8** — `02-two-pointers`: 3Sum (part 1 — get brute force, then optimize)
 - [ ] **Day 9** — `02-two-pointers`: 3Sum (finish), Container With Most Water

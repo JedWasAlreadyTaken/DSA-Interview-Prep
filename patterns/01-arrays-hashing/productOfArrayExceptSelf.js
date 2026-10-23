@@ -28,5 +28,21 @@ class Solution {
    * @param {number[]} nums
    * @return {number[]}
    */
-  productExceptSelf(nums) {}
+  productExceptSelf(nums) {
+    let res = [];
+    let start = 1;
+    for (let i = 0; i < nums.length; i++) {
+      res.push(start);
+      start *= nums[i];
+    }
+    let start2 = 1;
+    for (let i = nums.length - 1; i >= 0; i--) {
+      res[i] = start2 * res[i];
+      start2 *= nums[i];
+    }
+    return res;
+  }
 }
+const sol = new Solution();
+console.log(sol.productExceptSelf([1, 2, 3, 4])); // expected: [24, 12, 8, 6]
+console.log(sol.productExceptSelf([-1, 1, 0, -3, 3])); // expected: [0, 0, 9, 0, 0]

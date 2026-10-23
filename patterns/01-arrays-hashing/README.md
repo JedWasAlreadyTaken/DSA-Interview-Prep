@@ -4,5 +4,5 @@
 - [x] Contains Duplicate
 - [x] Valid Anagram
 - [x] Group Anagrams
-- [ ] Top K Frequent Elements
-- [ ] Product of Array Except Self
+- [x] Top K Frequent Elements
+- [x] Product of Array Except Self
