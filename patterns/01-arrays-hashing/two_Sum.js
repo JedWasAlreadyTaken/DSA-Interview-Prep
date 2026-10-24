@@ -84,7 +84,7 @@ class Solution {
     // whole map object as the second element instead of the index of the
     // complement — should be `num_to_index[num_needed]`.
     if (
-      numb_to_index[num_needed] !== undefined &&
+      num_to_index[num_needed] !== undefined &&
       num_to_index[num_needed] !== i
     ) {
       return [i, num_to_index];
