@@ -31,5 +31,44 @@ class Solution {
    * @param {number[]} height
    * @return {number}
    */
-  maxArea(height) {}
+  maxAreaBruteForce(height) {
+    let result = 0;
+    for (let i = 0; i < height.length; i++) {
+      for (let j = i + 1; j < height.length; j++) {
+        let cHeight = Math.min(height[i], height[j]);
+        let cWidth = j - i;
+        let water = cHeight * cWidth;
+
+        if (water > result) {
+          result = water;
+        }
+      }
+    }
+    return result;
+  }
+
+  OptimisedArea(height) {
+    let result = 0;
+    let left = 0;
+    let right = height.length - 1;
+
+    while (left < right) {
+      let cHeight = Math.min(height[left], height[right]);
+      let cWidth = right - left;
+      let water = cHeight * cWidth;
+
+      if (water > result) {
+        result = water;
+      }
+      left++;
+    }
+    return result;
+  }
 }
+
+const sol = new Solution();
+console.log(sol.maxAreaBruteForce([1, 8, 6, 2, 5, 4, 8, 3, 7])); // expected: 49
+console.log(sol.maxAreaBruteForce([1, 1])); // expected: 1
+console.log("Optimised \n ");
+console.log(sol.OptimisedArea([1, 8, 6, 2, 5, 4, 8, 3, 7])); // expected: 49
+console.log(sol.OptimisedArea([1, 1])); // expected: 1
