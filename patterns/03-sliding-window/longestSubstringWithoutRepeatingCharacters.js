@@ -31,5 +31,29 @@ class Solution {
    * @param {string} s
    * @return {number}
    */
-  lengthOfLongestSubstring(s) {}
+  lengthOfLongestSubstring(s) {
+    let substring = new Set();
+    let left = 0;
+    let best = 0;
+
+    for (let i = 0; i < s.length; i++) {
+      while (substring.has(s[i])) {
+        substring.delete(s[left]);
+        left = left + 1;
+      }
+      let length = i - left + 1;
+      substring.add(s[i]);
+
+      if (length > best) {
+        best = length;
+      }
+    }
+
+    return best;
+  }
 }
+
+const sol = new Solution();
+console.log(sol.lengthOfLongestSubstring("pwwkew")); // expected: 3
+console.log(sol.lengthOfLongestSubstring("bbbbb")); // expected: 1
+console.log(sol.lengthOfLongestSubstring("abcabcbb")); // expected: 3
