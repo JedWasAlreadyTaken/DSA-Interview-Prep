@@ -31,5 +31,22 @@ class Solution {
    * @param {number[]} prices
    * @return {number}
    */
-  maxProfit(prices) {}
+  maxProfit(prices) {
+    let bestProfit = 0;
+    let cheapest = Infinity;
+    for (let i = 0; i < prices.length; i++) {
+      if (prices[i] - cheapest > bestProfit) {
+        bestProfit = prices[i] - cheapest;
+      }
+
+      if (prices[i] < cheapest) {
+        cheapest = prices[i];
+      }
+    }
+    return bestProfit;
+  }
 }
+const sol = new Solution();
+console.log(sol.maxProfit([7, 6, 4, 3, 1])); // expected: 0
+console.log(sol.maxProfit([3, 8, 1, 2])); // expected: 5
+console.log(sol.maxProfit([7, 1, 5, 3, 6, 4])); // expected: 5

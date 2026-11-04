@@ -29,16 +29,16 @@ Check off both `PLAN.md` and the per-pattern `README.md` as you go.
 - [x] **Day 6** — `01-arrays-hashing`: Product of Array Except Self
 - [x] **Day 7** — `02-two-pointers`: Valid Palindrome
 - [x] **Day 8** — `02-two-pointers`: 3Sum (part 1 — get brute force, then optimize)
-- [ ] **Day 9** — `02-two-pointers`: 3Sum (finish), Container With Most Water
-- [ ] **Day 10** — Review day: redo one problem from days 3-9 cold, no notes, timed 15 min
+- [x] **Day 9** — `02-two-pointers`: 3Sum (finish), Container With Most Water
+- [x] **Day 10** — Review day: redo one problem from days 3-9 cold, no notes, timed 15 min
 
 ## Week 3 — Sliding Window + Stack
 
-- [ ] **Day 11** — `03-sliding-window`: Best Time to Buy and Sell Stock
+- [x] **Day 11** — `03-sliding-window`: Best Time to Buy and Sell Stock
 - [ ] **Day 12** — `03-sliding-window`: Longest Substring Without Repeating Characters
 - [ ] **Day 13** — `04-stack`: Valid Parentheses
 - [ ] **Day 14** — `04-stack`: Min Stack
-- [ ] **Day 15** — Review day: redo one sliding-window + one stack problem, timed
+- [ ] **Day 15** — Review day: redo one sliding-window + one stack problem, timed. Also redo 3Sum (optimised) and Top K Frequent Elements cold, timed 15 min each
 
 ## Week 4 — Binary Search + Linked List
 
