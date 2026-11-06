@@ -151,4 +151,23 @@ class SlidingSolution {
    * @param {number[]} prices
    * @return {number}
    */
+
+  stock(prices) {
+    let bestprofit = 0;
+    let cheapest = Infinity;
+    for (let i = 0; i < prices.length; i++) {
+      if (prices[i] - cheapest > bestprofit) {
+        bestprofit = prices[i] - cheapest;
+      }
+
+      if (prices[i] < cheapest) {
+        cheapest = prices[i];
+      }
+    }
+    return bestprofit;
+  }
 }
+const slidingsol = new SlidingSolution();
+console.log(slidingsol.stock([7, 6, 4, 3, 1])); // expected: 0
+console.log(slidingsol.stock([3, 8, 1, 2])); // expected: 5
+console.log(slidingsol.stock([7, 1, 5, 3, 6, 4])); // expected: 5
